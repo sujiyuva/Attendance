@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:background="#330066"
+        android:gravity="center"
+        android:text="Dept"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="domain"
+        android:textColor="#ffffff"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <TextView
+        android:id="@+id/textView_name1"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/TextView01"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:background="#171717"
+        android:gravity="center"
+        android:text="Medium Text"
+        android:textColor="#ffffff"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textView_name"
+        android:layout_toLeftOf="@+id/textView_name1"
+        android:background="#330066"
+        android:gravity="center"
+        android:text="Rollno"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:background="#330066"
+        android:gravity="center"
+        android:text="Name"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/textView3"
+        android:background="#171717"
+        android:gravity="center"
+        android:text="Medium Text"
+        android:textColor="#ffffff"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,SpUsage" />
+
+</RelativeLayout>
