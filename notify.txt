@@ -1,0 +1,42 @@
+package com.example.managementsystem;
+
+import android.os.Bundle;
+
+public class Notification {
+	BAuth.createSession("bob", "bob67pass", new QBEntityCallback<QBSession>() {
+	    @Override
+	    public void onSuccess(QBSession session, Bundle params) {
+	    	
+	    }
+
+}
+	 String registrationId = "...";
+	 
+     // Subscribe to Push Notifications
+     subscribeToPushNotifications(registrationId)
+
+ }
+
+ @Override
+ public void onError(QBResponseException errors) {
+
+ }
+});
+
+
+public void subscribeToPushNotifications(String registrationID) {
+ QBSubscription subscription = new QBSubscription(QBNotificationChannel.GCM);
+ subscription.setEnvironment(QBEnvironment.DEVELOPMENT);
+ //
+ String deviceId;
+ final TelephonyManager mTelephony = (TelephonyManager) activity.getSystemService(
+             Context.TELEPHONY_SERVICE);
+ if (mTelephony.getDeviceId() != null) {
+     deviceId = mTelephony.getDevi
+    		 ceId(); //*** use for mobiles
+ } else {
+     deviceId = Settings.Secure.getString(activity.getContentResolver(),
+                 Settings.Secure.ANDROID_ID); //*** use for tablets
+ }
+ subscription.setDeviceUdid(deviceId);
+ }
